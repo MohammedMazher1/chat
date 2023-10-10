@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: #eee;
+    font-family: sans-serif;
+  }
+  .card{
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: flex;
+    /* gap: 10px; */
+    
+  }
+  .chats{
+    width: 300px;
+    height: 400px;
+    margin-top: 60px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    border: 0.5px solid rgba(0,0,0,0.3);
+    border-right: none;
+    background-color: rgba(0, 0, 0,0.3);
+    transform: translateX(250px);
+    transition: transform 0.8s;
+  }
+  .chats:hover{
+    transform: translateX(0);
+  }
+  .chats .header{
+    background-color: rgba(0, 0, 0,0.5);
+  }
+  .chats .colaps{
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    /* background-color: rgba(0, 0, 0,0.5); */
+    
+  }
+  .chats .colaps span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    
+  }
+  .chats .main {
+    padding: 10px;
+  }
+  .chats .main> div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(128, 128, 128,0.1);
+  }
+  .chats .main div img{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  .frind h6{
+    opacity: 0.7;
+  }
+  .chat {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 2px 20px 10px rgb(190, 188, 188);
+  }
+  header {
+    height: 60px;
+    background-color: rgba(0, 0, 0,0.5);
+    display: flex;
+    border-radius: 10px 10px 0 0;
+  }
+  header img {
+    width: 50px;
+    margin: 5px 0 0 10px;
+  }
+  header .person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15px;
+  }
+  header .person span{
+   font-size: 15px;
+   opacity: 0.8;
+  }
+  main {
+    background-image: url(../1696933698301.jpeg);
+    object-fit: cover;
+    background-size: contain;
+    flex-grow: 1;
+    height: 400px;
+    overflow: scroll;
+  }
+  main div {
+    margin: 10px ;
+    box-shadow: 1px 1px 5px gray;
+    width: 180px;
+    padding: 6px;
+  }
+  main  .sender {
+    background-color: rgb(59, 57, 57);
+    float: right;
+    color: white;
+    border-radius: 10px 10px 0 10px;
+  }
+  main  .resever {
+    background-color: white;
+    float: left;
+    border-radius: 10px 10px 10px 0;
+  }
+  main .time{
+    text-align: center;
+    width: fit-content;
+    margin: 10px auto;
+    border-radius: 10px;
+    opacity: 0.5;
+  }
+  /* start footer style*/
+  footer {
+    background-color: rgba(0, 0, 0,0.5);    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+  }
+  footer span{
+    display: block;
+  }
+  footer input{
+    border-radius: 10px;
+    padding: 3px 0;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 4px gray;
+  }
+  footer input::placeholder{
+    font-size: 14px;
+    opacity: 0.7;
+  }
+ 
+ 
